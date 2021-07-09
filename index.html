@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Fretboard</title>
+</head>
+<body>
+    <div class="settings">
+        <label for="instrument-selector">Selected Instrument : </label>
+        <select name="instrument-selector" id="instrument-selector">
+
+        </select>
+        <div class="accidental-selector">
+            <input type="radio" class="acc-select" id="flats" name="accidentals" value="flats" checked>
+            <label for="flats">♭</label>
+            <input type="radio" class="acc-select" id="sharps" name="accidentals" value="sharps">
+            <label for="sharps">♯</label>
+
+        </div>
+        <label for="number-of-frets">Number of Frets : </label>
+        <input type="number" id="number-of-frets" min="5" max="30" value="12">
+
+        <label for="show-all-notes">Show All Notes: </label>
+        <input type="checkbox" id="show-all-notes">
+
+        <label for="show-all-present-notes">Show All Present Notes: </label>
+        <input type="checkbox" id="show-all-present-notes">
+    </div>
+    <div class="Fretboard">   
+
+        
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
